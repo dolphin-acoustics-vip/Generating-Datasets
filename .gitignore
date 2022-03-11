@@ -2,3 +2,6 @@ dolphin/
 model_test_train/
 sample.wav
 saved_spectrogram.png
+test-wav-clips/
+test-images-no-norm/
+test-images-with-median/
