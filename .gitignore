@@ -5,3 +5,4 @@ saved_spectrogram.png
 test-wav-clips/
 test-images-no-norm/
 test-images-with-median/
+test-images-compressed-power-range/
