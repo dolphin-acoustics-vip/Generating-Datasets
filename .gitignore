@@ -6,3 +6,6 @@ test-wav-clips/
 test-images-no-norm/
 test-images-with-median/
 test-images-compressed-power-range/
+test-imgs-with-folders/
+__pycache__
+GUI/
