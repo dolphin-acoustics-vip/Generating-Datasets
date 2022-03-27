@@ -8,5 +8,6 @@ test-images-with-median/
 test-images-compressed-power-range/
 test-imgs-with-folders/
 25-03-2022-basic-classifier.model/
+2022-03-27-eric.model/
 __pycache__
 GUI/
