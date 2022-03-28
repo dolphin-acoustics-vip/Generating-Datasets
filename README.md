@@ -3,6 +3,8 @@
 The easiest way to set up and run the jupyter notebook files in this folder is by creating a virtual environment for this project. This way you can avoid the so-called "dependency-hell".
 But you can obviously choose your own preferred way of getting everything set up, just know that it will be more work.
 
+The Python version used in this project is Python 3.9.10
+
 ## First step: creating a virtual environment using virtualenv
 
 First, check that you have virtualenv installed:
