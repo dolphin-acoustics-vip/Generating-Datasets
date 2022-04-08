@@ -1,11 +1,13 @@
-# CNN classifier for dolphin whistle spectrograms
+# Spectrogram Generator
+
+## Set up
 
 The easiest way to set up and run the jupyter notebook files in this folder is by creating a virtual environment for this project. This way you can avoid the so-called "dependency-hell".
 But you can obviously choose your own preferred way of getting everything set up, just know that it will be more work.
 
 The Python version used in this project is Python 3.9.10
 
-## First step: creating a virtual environment using virtualenv
+### First step: creating a virtual environment using virtualenv
 
 First, check that you have virtualenv installed:
 `which virtualenv`
@@ -34,7 +36,7 @@ To deactivate the virtual environment:
 To delete an environment enter the following command:
 `sudo rm -rf <virtual_env_name>`
 
-## Second step: add virtual enviroment to jupyter notebook
+### Second step: add virtual enviroment to jupyter notebook
 
 1. activate your venv if you haven't already
 2. install ipykernel (this provides the ipython kernel for jupyter, ie allows jupyter to change a kernel based on a virtual enviroment)
@@ -42,7 +44,7 @@ To delete an environment enter the following command:
 `python -m ipykernel install --user --name=<virtual_env_name>`
 or you can change the kernel with the GUI in the jupyter notebook interface:
 
-## Deleting your virtual environment from the jupyter notebook
+### Deleting your virtual environment from the jupyter notebook
 
 if you delete your virtual environment you would need to remove it from the list of kernels:
 `jupyter kernelspec list`
