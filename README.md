@@ -1,51 +1,27 @@
 # Spectrogram Generator
 
+This repository holds all code produced by the VIP dolphin acoustics group that are relevant to the generation of datasets for machine learning. As of April 9th 2022, the group's main focus is to use spectrograms of waveform clips to train their models. But in the future this repository can be expanded to contain preprocessing methods on waveform data files. 
+
+We used jupyter notebooks as our working environments for the code. If you type githubtocolab in place of github in the url of the jupyter notebook you are currently reading, you can automatically jump to google colab.
+
 ## Set up
 
-The easiest way to set up and run the jupyter notebook files in this folder is by creating a virtual environment for this project. This way you can avoid the so-called "dependency-hell".
+The easiest way to set up and run the jupyter notebook files in this folder is by creating a virtual environment for this project. This way you can avoid the so-called "dependency-hell". For a tutorial head to this link [https://github.com/dolphin-acoustics-vip/Workflow_Tutorials#creating-a-virtual-environment-using-virtualenv-python-specific].
 But you can obviously choose your own preferred way of getting everything set up, just know that it will be more work.
 
 The Python version used in this project is Python 3.9.10
 
-### First step: creating a virtual environment using virtualenv
+Each file is self contained, and they don't require any extra modules to import or download apart from those pippable in the requirements.txt file.
 
-First, check that you have virtualenv installed:
-`which virtualenv`
-if you don't have virtualenv installed enter the following in terminal:
-`pip install virtualenv`
+The code here is fully os-independent, so you don't have to worry whether you are running on a windows os or IOS or linux, they will all work. But do make sure you set up a virtual environment correctly before continuing.
 
-Now create a virtual environment:
-`virtualenv <virtual_env_name>` (replace <virtual_env_name> with any name. For example you could type: `virtualenv dolphin_acoustics`)
+## What does each file do?
 
-Activate your virtual environment:
-`source <virtual_env_name>/bin/activate`
+Quick overview:
 
-You can verify that you are in the correct virtual environment by typing:
-`which python`
-`which pip`
-The terminal/command-prompt usually shows that you have activated a virtualenv by displaying `(<virtual_env_name)` before the prompt.
+dataset_generator.ipynb [https://github.com/dolphin-acoustics-vip/Spectrogram-Generator/blob/main/dataset_generator.ipynb]: This jupyter notebook is for everything related to generating spectrograms:
+- finding clips in the given input path
+- generating and saving spectrograms to output path
+- splitting of the generated spectrograms dataset into training and testing folders
 
-Install all the necessary libraries and modules of the correct versions by typing:
-`pip install -r requirements.txt`
-
-### Deactivating or deleting your virtual environment
-
-To deactivate the virtual environment:
-`deactivate`
-
-To delete an environment enter the following command:
-`sudo rm -rf <virtual_env_name>`
-
-### Second step: add virtual enviroment to jupyter notebook
-
-1. activate your venv if you haven't already
-2. install ipykernel (this provides the ipython kernel for jupyter, ie allows jupyter to change a kernel based on a virtual enviroment)
-3. add the virtual environment to Jupyter by typing:
-`python -m ipykernel install --user --name=<virtual_env_name>`
-or you can change the kernel with the GUI in the jupyter notebook interface:
-
-### Deleting your virtual environment from the jupyter notebook
-
-if you delete your virtual environment you would need to remove it from the list of kernels:
-`jupyter kernelspec list`
-`jupyter kernelspec uninstall <my_env_name>`
+demo_gen_spectrograms.ipynb [https://github.com/dolphin-acoustics-vip/Spectrogram-Generator/blob/main/demo_gen_spectrograms.ipynb]: This jupyter notebook is a sort of playground for testing and playing with different librosa functions and normalisation techniques on a sample waveform clip. This is not production ready code. A sample.wav has been provided in this repo for testing and experimentation, but the user can play with their own waveform data as well.
