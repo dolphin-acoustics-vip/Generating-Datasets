@@ -27,13 +27,17 @@ Quick overview:
 [demo_gen_spectrograms.ipynb](https://github.com/dolphin-acoustics-vip/Spectrogram-Generator/blob/main/demo_gen_spectrograms.ipynb): This jupyter notebook is a sort of playground for testing and playing with different librosa functions and normalisation techniques on a sample waveform clip. This is not production ready code. A sample.wav has been provided in this repo for testing and experimentation, but the user can play with their own waveform data as well.
 
 ## Example spectrograms:
+
 ![Bottlenose](https://user-images.githubusercontent.com/71788619/162578789-f9231aa8-bd39-43d3-9215-8555e9c877d8.png) 
+
 Normalized Bottlenose Wavclip
 
 ![Common](https://user-images.githubusercontent.com/71788619/162578829-4b024873-915a-43e0-a91f-da3b0594c22a.png) 
+
 Normalized Common Wavclip
 
 ![Melon-headed](https://user-images.githubusercontent.com/71788619/162578841-904a5d6e-f391-4c29-8d5b-a5466d261bcc.png) 
+
 Normalized Melon-headed Wavclip
 
 
